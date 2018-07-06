@@ -61,4 +61,11 @@ def turn_count
   @count
 end
 
+def current_player
+  if !turn_count.odd?
+    return "X"
+  else
+    return "O"
+  end
+end
 end
