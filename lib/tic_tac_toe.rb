@@ -29,7 +29,7 @@ def input_to_index(input)
 end
 
 def move(index, token="X")
-  input_to_index(index)
+  @index = input_to_index(index)
   @board[@index]
 end
 
