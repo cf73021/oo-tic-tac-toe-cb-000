@@ -28,7 +28,8 @@ def input_to_index(input)
   @index = input
 end
 
-def move
+def move(index, token="X")
+  input_to_index(index)
   @board[@index] = current_player
 end
 
