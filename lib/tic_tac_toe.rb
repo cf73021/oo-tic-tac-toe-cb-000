@@ -87,8 +87,8 @@ def over?
     draw? || won?
 end
 
-def winner?
-  status=won?
+def winner
+  status= won?
   if status.nil?
     nil
   else
