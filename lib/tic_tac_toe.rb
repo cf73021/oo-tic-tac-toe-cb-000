@@ -40,4 +40,12 @@ def valid_move?(index)
  index.between?(0,8) && !position_taken?(index)
 end
 
+def turn_count
+  @count = 0
+  @board.each do |i|
+    @count +=1 if i != " "
+  end
+  @count
+end
+
 end
